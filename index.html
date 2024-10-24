@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 3 Restaurants</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+            background-color: black;
+            color: white;
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        
+        .sidebar .image-button {
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .sidebar .image-button img {
+            width: 50px; 
+            height: auto;
+        }
+
+        .sidebar a {
+            width: 100%;
+            text-decoration: none;
+        }
+
+        .sidebar button {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: left;
+            border-left: 3px solid white;
+        }
+
+        .sidebar button:hover {
+            background-color: #444;
+        }
+
+        .content {
+            width: 80%;
+            position: relative;
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            text-align: center; 
+        }
+
+        .content::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('121212.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.5;
+            z-index: -1;
+        }
+
+        .content h1 {
+            position: relative;
+            font-size: 64px;
+            color: red;
+            margin: 0;
+            font-weight: bold;
+            z-index: 1;
+        }
+
+        .content .chef-icon {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 150px;
+            height: auto;
+            z-index: 1;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+       
+        <a href="index.html" class="image-button">
+            <img src="1212-removebg-preview 1.png">
+        </a>
+
+       
+        <a href="1page.html"><button>TOP1</button></a>
+        <a href="2page.html"><button>TOP2</button></a>
+        <a href="3page.html"><button>TOP3</button></a>
+        <a href="page4.html"><button>Review & Rating</button></a>
+        <a href="page5.html"><button>Dessert</button></a>
+    </div>
+
+    <div class="content">
+        <h1>TOP 3 RESTAURANTS</h1>
+        <img src="1212-removebg-preview 1.png" class="chef-icon">
+    </div>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>안동집</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+            background-color: black;
+            color: white;
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .sidebar .image-button {
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .sidebar .image-button img {
+            width: 50px;
+            height: auto;
+        }
+
+        .sidebar a {
+            width: 100%;
+            text-decoration: none;
+        }
+
+        .sidebar button {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: left;
+            border-left: 3px solid white;
+        }
+
+        .sidebar button.active {
+            background-color: #555; 
+        }
+
+        .sidebar button:hover {
+            background-color: #444;
+        }
+
+        .content {
+            width: 80%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 0;
+        }
+
+        .content::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('kitchen-background.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.5;
+            z-index: -1;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+
+        .menu-container {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            padding: 0 50px;
+            gap: 20px; 
+        }
+
+        .menu-card {
+            background-color: white;
+            color: black;
+            width: 380px; 
+            height: 260px; 
+            border-radius: 10px;
+            display: flex;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .menu-card img {
+            width: 50%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .menu-text {
+            padding: 20px;
+            width: 50%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .menu-text h3 {
+            font-size: 22px;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .menu-text p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        .menu-text .price {
+            font-weight: bold;
+            font-size: 22px;
+            margin-top: 10px;
+        }
+
+        
+        .info-box {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            width: 80%;
+            border: 2px solid white;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .info-box div {
+            display: flex;
+            align-items: center;
+        }
+
+        .info-box img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        .info-box p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .content::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('식당3.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.5;
+            z-index: -1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="index.html" class="image-button">
+            <img src="1212-removebg-preview 1.png"> 
+        </a>
+
+       
+        <a href="1page.html"><button>TOP1</button></a>
+        <a href="2page.html"><button>TOP2</button></a> 
+        <a href="3page.html"><button class="active">TOP3</button></a>
+        <a href="4page.html"><button>Review & Rating</button></a>
+        <a href="5page.html"><button>Dessert</button></a>
+    </div>
+
+    <div class="content">
+        <h1>안동집</h1>
+
+      
+        <div class="menu-container">
+            <div class="menu-card">
+                <img src="안동집 음식1.png"> 
+                <div class="menu-text">
+                    <h3>생삼겹살</h3>
+                    <p>600g 1근</p>
+                    <p class="price">45,000</p>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="안동집 음식2.png"> 
+                <div class="menu-text">
+                    <h3>된장찌개</h3>
+                    <p>매콤한 엣날 맛의 <br>된장찌개</p>
+                    <p class="price">8,000</p>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="안동집 음식3.png">
+                <div class="menu-text">
+                    <h3>김치찌개</h3>
+                    <p>매콤하고 시원한 노포 김치찌개</p>
+                    <p class="price">9,000</p>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="info-box">
+            <div>
+                <img src="위치아이콘.png" alt="Location Icon"> 
+                <p>전북 군산시 아리랑로 39 안동집</p>
+            </div>
+            <div>
+                <img src="시계아이콘1.png" alt="Clock Icon"> 
+                <p>매일 11:00~24:00</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

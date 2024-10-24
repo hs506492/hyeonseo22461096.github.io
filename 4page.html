@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review & Rating</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+            background-color: black;
+            color: white;
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .sidebar .image-button {
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .sidebar .image-button img {
+            width: 50px;
+            height: auto;
+        }
+
+        .sidebar a {
+            width: 100%;
+            text-decoration: none;
+        }
+
+        .sidebar button {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: left;
+            border-left: 3px solid white;
+        }
+
+        .sidebar button.active {
+            background-color: #555;
+        }
+
+        .sidebar button:hover {
+            background-color: #444;
+        }
+
+        .content {
+            width: 80%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+
+        .content::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('background-review.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.5;
+            z-index: -1;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: red;
+            margin: 0 0 40px 0;
+            font-weight: bold;
+        }
+
+        .review-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 80%;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .review {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .review h3 {
+            margin: 0;
+            font-size: 20px;
+            color: yellow;
+        }
+
+        .review p {
+            font-size: 16px;
+            color: white;
+        }
+
+        .rating {
+            font-size: 16px;
+            color: #ffcc00;
+            margin-top: 5px;
+        }
+        .content::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('121212.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.5;
+            z-index: -1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        
+        <a href="index.html" class="image-button">
+            <img src="1212-removebg-preview 1.png"> 
+        </a>
+
+     
+        <a href="1page.html"><button>TOP1</button></a>
+        <a href="2page.html"><button>TOP2</button></a>
+        <a href="3page.html"><button>TOP3</button></a>
+        <a href="4page.html"><button class="active">Review & Rating</button></a>
+        <a href="5page.html"><button>Dessert</button></a>
+    </div>
+
+    <div class="content">
+        <h1>Reviews & Ratings</h1>
+
+        <div class="review-container">
+            
+            <div class="review">
+                <h3>SOYO</h3>
+                <p>군산 소요 오마카세는 섬세한 고기 굽기와 프라이빗한 분위기로 유명하며 고기 질과 맛이 매우좋고, 직원이 매우 친절하다.</p>
+                <div class="rating">평점: ★★★★★ 리뷰:300개 이상</div>
+            </div>
+
+            
+            <div class="review">
+                <h3>봄의정원</h3>
+                <p>봄의정원은 분위기 좋은 파스타 전문점으로, 맛과 서비스가 훌륭하지만 대기 시간이 길다는 단점도 있다.</p>
+                <div class="rating">평점: ★★★★☆ 리뷰:200개 이상 </div>
+            </div>
+
+            
+            <div class="review">
+                <h3>안동집</h3>
+                <p>군산 안동집은 한식 백반의 노포식당으로, 삼겹살과 된장찌개의 조합이 인기가 많습니다. 가게가 오래되어 내부가 다소 낡았다는 리뷰도 있다.</p>
+                <div class="rating">평점: ★★★★☆ 리뷰:150개 이상</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

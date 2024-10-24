@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dessert Recommendations</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+            background-color: black;
+            color: white;
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .sidebar .image-button {
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .sidebar .image-button img {
+            width: 50px;
+            height: auto;
+        }
+
+        .sidebar a {
+            width: 100%;
+            text-decoration: none;
+        }
+
+        .sidebar button {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: left;
+            border-left: 3px solid white;
+        }
+
+        .sidebar button.active {
+            background-color: #555;
+        }
+
+        .sidebar button:hover {
+            background-color: #444;
+        }
+
+        .content {
+            width: 80%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+
+        .content::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('dessert-background.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.5;
+            z-index: -1;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: red;
+            margin: 0 0 40px 0;
+            font-weight: bold;
+        }
+
+        .dessert-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 80%;
+        }
+
+        .dessert-section {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .dessert-section h3 {
+            margin: 0;
+            font-size: 24px;
+            color: yellow;
+        }
+
+        .dessert-section p {
+            font-size: 18px;
+            color: white;
+        }
+
+        .dessert-section .menu {
+            font-size: 16px;
+            color: #ffcc00;
+        }
+
+        .dessert-section img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+        .content::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('121212.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.5;
+            z-index: -1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="index.html" class="image-button">
+            <img src="1212-removebg-preview 1.png"> 
+        </a>
+
+        <a href="1page.html"><button>TOP1</button></a>
+        <a href="2page.html"><button>TOP2</button></a>
+        <a href="3page.html"><button>TOP3</button></a>
+        <a href="4page.html"><button>Review & Rating</button></a>
+        <a href="5page.html"><button class="active">Dessert </button></a>
+    </div>
+
+    <div class="content">
+        <h1>Dessert</h1>
+
+        <div class="dessert-container">
+            
+            <div class="dessert-section">
+                <h3>After SOYO</h3>
+                <p>오마카세 코스 후에는 가벼운 디저트가 어울립니다. 군산 프랭크 커핀바에서 커피와 함께 크로플을 즐겨보세요.</p>
+                <p class="menu">추천 메뉴: 프랭크 커피, 크로플</p>
+            </div>
+
+            
+            <div class="dessert-section">
+                <h3>After 봄의정원</h3>
+                <p>봄의정원의 파스타를 맛본 후, 성수동의 도우룸에서 맛있는 홈메이드 도넛을 즐겨보세요.</p>
+                <p class="menu">추천 메뉴: 크림 도넛, 바스크 치즈케이크</p>
+            </div>
+
+            
+            <div class="dessert-section">
+                <h3>After 안동집</h3>
+                <p>안동집에서의 한식을 마친 후, 근처에 대한민국에서 가장 오래된 빵집 이성당에서 디저트를 즐겨보세요.</p>
+                <p class="menu">추천 메뉴: 밀크쉐이크, 팥빵</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
